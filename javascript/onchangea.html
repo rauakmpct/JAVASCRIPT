@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<select  onchange='checkvalue(this.value)'> 
+    <option>College</option>  
+    <option>RJIT</option>
+    <option>ITM</option>
+    <option>other</option>
+</select> 
+<input type="text" name="" id="color" style='display:none'>
+
+
+<button>Submit</button>
+
+
+
+<script type="text/javascript">
+	
+
+	function checkvalue(val)
+{
+    if(val==="other")
+       document.getElementById('color').style.display='block';
+    else
+       document.getElementById('color').style.display='none'; 
+}
+</script>
+
+
+
+
+</body>
+</html>
